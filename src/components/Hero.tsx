@@ -1,5 +1,7 @@
+
 function Hero() {
   return (
+    
     <section className="flex h-screen flex-col items-center justify-center px-6 text-center">
 
       <p className="mb-4 text-lg font-semibold text-blue-600">

@@ -61,7 +61,7 @@ const projects = [
         title: "커넥트샵",
         info: "팀 프로젝트 4명 · 2026.04.07 ~ 2026.04.28",
         description:
-            "flask를 사용해 구현한 프로젝트로 가상의 전자제품 판매사이트를 만들었습니다 .",
+            "flask를 사용해 구현한 프로젝트로 전자제품 판매사이트를 만들었습니다 .",
         
         role: "프론트엔드",
 
@@ -206,8 +206,6 @@ function Projects() {
 
     </div>
 
-
-
     {/* 담당 */}
     <div className="mb-8">
 
@@ -217,8 +215,6 @@ function Projects() {
 
     </div>
 
-
-
     {/* 기여 항목 */}
     <div className="mb-8">
 
@@ -227,8 +223,6 @@ function Projects() {
         </p>
 
     </div>
-
-
 
     {/* 사용 기술 */}
     <div className="mb-8">
@@ -255,8 +249,6 @@ function Projects() {
         </div>
 
     </div>
-
-
 
     {/* 링크 */}
     <div className="flex gap-4">
@@ -296,38 +288,44 @@ function Projects() {
 </div>
 
                 {/* 이미지 영역 */}
-                <div
-                    className="
-                    h-[400px]
-                    overflow-hidden
-                    rounded-2xl
-                    bg-white
-                    shadow"
+                <div>
+    <div className="flex justify-end mb-2">
+        <span className="text-xs text-gray-400">
+            마우스를 올려보세요
+        </span>
+    </div>
 
-                    onMouseEnter={() => setHover(true)}
+    {/* 이미지 영역 */}
+    <div
+        className="
+        h-[400px]
+        overflow-hidden
+        rounded-2xl
+        bg-white
+        shadow"
 
-                    onMouseLeave={() => setHover(false)}
-                >
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+    >
+        <img
+            key={project.image}
+            ref={imgRef}
+            src={project.image}
+            alt={project.title}
+            onLoad={handleImageLoad}
 
-                    <img
-                        key={project.image}
-                        ref={imgRef}
-                        src={project.image}
-                        alt={project.title}
-                        onLoad={handleImageLoad}
+            style={{
+                transform: hover
+                    ? `translateY(-${move}px)`
+                    : "translateY(0)",
 
-                        style={{
-                            transform: hover
-                                ? `translateY(-${move}px)`
-                                : "translateY(0)",
+                transition: "transform 3s linear"
+            }}
 
-                            transition: "transform 3s linear"
-                        }}
-
-                        className="w-full"
-                    />
-
-                </div>
+            className="w-full"
+        />
+    </div>
+</div>
 
             </div>
 

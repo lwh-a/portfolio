@@ -1,3 +1,5 @@
+import { FlipCard } from "./FlipCard";
+
 function Contact() {
     return (
         <section
@@ -17,17 +19,35 @@ function Contact() {
 
             <div className="flex gap-6">
 
-                <button className="rounded-full border px-6 py-3">
-                    GitHub
-                </button>
+                <FlipCard
+                    width={240}
+                    height={80}
+                    front={
+                        <button className=" ">
+                            GitHub
+                        </button>
+                    }
+                    back={
+                        <div>
+                            https://github.com/lwh-a
+                        </div>
+                    }
+                />
 
-                <button className="rounded-full border px-6 py-3">
-                    Email
-                </button>
-
-                <button className="rounded-full bg-blue-600 px-6 py-3 text-white">
-                    Resume
-                </button>
+                <FlipCard
+                    width={240}
+                    height={80}
+                    front={
+                        <button className="">
+                            Email
+                        </button>
+                    }
+                    back={
+                        <div>
+                            nananatehan1133@naver.com
+                        </div>
+                    }
+                />
 
             </div>
 

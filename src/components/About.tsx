@@ -33,9 +33,9 @@ function About() {
           </h3>
 
           <p className="text-gray-600">
-            AI + X 부트캠프
+            AI + X 부트캠프 웹 프로젝트 수행
             <br />
-            웹 프로젝트 수행
+            2026/02/24~2026/07/29
           </p>
 
         </div>
@@ -50,7 +50,7 @@ function About() {
           <div className="flex flex-wrap gap-2">
 
             {
-              ["React","TypeScript","Tailwind","Flask"]
+              ["HTML", "css","javascript","python","React","TypeScript","Tailwind","Flask"]
               .map(skill => (
                 <span
                   key={skill}
