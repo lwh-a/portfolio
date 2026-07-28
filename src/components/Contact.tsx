@@ -28,9 +28,12 @@ function Contact() {
                         </button>
                     }
                     back={
-                        <div>
+                        <a href="https://github.com/lwh-a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
                             https://github.com/lwh-a
-                        </div>
+                        </a>
                     }
                 />
 
@@ -43,9 +46,7 @@ function Contact() {
                         </button>
                     }
                     back={
-                        <div>
-                            nananatehan1133@naver.com
-                        </div>
+                        <a href="mailto:nananatehan1133@naver.com">nananatehan1133@naver.com</a>
                     }
                 />
 
